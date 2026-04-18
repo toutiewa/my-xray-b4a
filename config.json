@@ -1,0 +1,19 @@
+{
+  "log": { "loglevel": "none" },
+  "inbounds": [{
+    "port": 8080, 
+    "protocol": "vless",
+    "settings": {
+      "clients": [{ "id": "7649d214-a95e-428a-8b83-8418f4a1801c" }], 
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "xhttp",
+      "xhttpSettings": {
+        "path": "/xray-opencode", 
+        "mode": "packet" 
+      }
+    }
+  }],
+  "outbounds": [{ "protocol": "freedom" }]
+}
